@@ -8,29 +8,29 @@ Console.WriteLine(a);// a
 // Example array to be sorted with console method
 int[] arr = { 187, 234, 234, 234, 156, 1888, 1987 };
 
-        Console.WriteLine("Original array:");
+Console.WriteLine("Original array:");
 
 Console.Write("[");
-for (int j = 0; j < arr.Length-1; j++)
+for (int j = 0; j < arr.Length - 1; j++)
 {
-    Console.Write(arr[j]+",");
+    Console.Write(arr[j] + ",");
 }
-Console.Write(arr[arr.Length-1]);
+Console.Write(arr[arr.Length - 1]);
 Console.Write("]");
 Console.WriteLine();
 Console.WriteLine();
 Sorter sorter = new Sorter();
 
-    int[] sol = Sorter.sort(arr);
+int[] sol = Sorter.sort(arr);
 
 Console.WriteLine("Sorted Array");
 Console.Write("[");
 
-for (int i = 0; i <sol.Length-1; i++)
+for (int i = 0; i < sol.Length - 1; i++)
 {
-    Console.Write(sol[i]+",");
+    Console.Write(sol[i] + ",");
 }
-Console.Write(sol[sol.Length-1]);
+Console.Write(sol[sol.Length - 1]);
 Console.Write("]");
 Console.WriteLine();
 Console.WriteLine();
@@ -39,16 +39,18 @@ Console.WriteLine();
 Console.WriteLine("string concatenation method");
 string[] los = new string[sol.Length];
 int count = 0;
-foreach (int i in sol) {
-    los[count]=i.ToString(); 
+foreach (int i in sol)
+{
+    los[count] = i.ToString();
     count++;
 }
 String h = "";
-foreach (String j in los) {
-    
-    h = h + j+",";
+foreach (String j in los)
+{
+
+    h = h + j + ",";
 }
-h=h.Remove(h.Length-2);
+h = h.Remove(h.Length - 2);
 Console.WriteLine(h);
 
 Console.Write((char)(10));
@@ -70,4 +72,4 @@ Console.WriteLine();
 
 
 Console.ReadKey();
-    
+
