@@ -32,7 +32,7 @@ namespace SortConsole.Test
 
         public string TestCaesarLock(string plaintext)
         {
-            return Ceasarverschlüsselung.Lock2(plaintext);
+            return Ceasarverschluesselung.Encrypt(plaintext);
         }
 
         [Test]
@@ -50,7 +50,7 @@ namespace SortConsole.Test
         [TestCase("     ", ExpectedResult = "     ", TestName = "Decrypt - space")]
         public string DecryptTests(string cryptedText)
         {
-            return Ceasarverschlüsselung.Unlock(cryptedText);
+            return Ceasarverschluesselung.Decrypt(cryptedText);
         }
         // todo: test cases for encryption
         // same, but in other direction

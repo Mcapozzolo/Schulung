@@ -1,7 +1,6 @@
-﻿//// See https://aka.ms/new-console-template for more information
-//using System.Diagnostics;
-//using SortConsole;
-
+﻿// <copyright file="Program.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 //Console.WriteLine("Hello, World!");
 //char a = (char)85;
 //Console.WriteLine(a);// a
