@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,27 +30,46 @@ namespace SortConsole
 Ihre Eingabe: ");
 
                 menuChoice = Console.ReadLine();
-           
+
 
                 while (menuChoice != "1" && menuChoice != "2" && menuChoice != "3" && menuChoice != "9")
                 {
                     Console.WriteLine("Ungültige Eingabe. Bitte 1, 2, 3 oder 9 eingeben: ");
-                    menuChoice = Console.ReadLine();
+                    menuChoice = Console.ReadLine()!;
                 }
 
                 if (menuChoice.Equals("2"))
                 {
                     Console.WriteLine("Geben sie ein Wort ein");
                     Ceasarverschlüsselung c = new Ceasarverschlüsselung();
-                    String r = Ceasarverschlüsselung.Lock(Console.ReadLine());
+                    String r = Ceasarverschlüsselung.Lock2(Console.ReadLine()!);
                     Console.WriteLine(r);
                 }
-                else if (menuChoice.Equals("3"))
+                //else if (menuChoice.Equals("3"))
+                //{
+                //    Console.WriteLine("Geben sie ein Wort ein");
+                //    Ceasarverschlüsselung c = new Ceasarverschlüsselung();
+                //    String r = Ceasarverschlüsselung.unlock(Console.ReadLine()!);
+                //    Console.WriteLine(r);
+                //}
+                else if (menuChoice.Equals("1"))
                 {
-                    Console.WriteLine("Geben sie ein Wort ein");
-                    Ceasarverschlüsselung c = new Ceasarverschlüsselung();
-                    String r = Ceasarverschlüsselung.unlock(Console.ReadLine());
-                    Console.WriteLine(r);
+
+                    Console.WriteLine("Geben Sie beliebige Zahlen kommagetrennt ein:");
+                    string input = Console.ReadLine()!;
+                    int[] inputNumbers = NumberInputReader.ReadNumberFromInput(input);
+
+                    if (inputNumbers.Length == 0)
+                    {
+                        // output try again.
+                    }
+
+                    Sorter c = new Sorter();
+                    int[] sortedNumbers = Sorter.sort(inputNumbers);
+
+                    string output = string.Join(", ", sortedNumbers);
+
+                    Console.WriteLine(output);
                 }
 
             } while (menuChoice != "9");
