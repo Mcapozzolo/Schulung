@@ -25,7 +25,7 @@ namespace SortConsole.Test
         [TestCase("9 Xyz", ExpectedResult = "2 Abc", TestName = "Encrypt - start at beginning")]
         [TestCase("fritz@box.com", ExpectedResult = "iulwc@era.frp", TestName = "Encrypt - with special characters")]
         [TestCase("x", ExpectedResult = "a", TestName = "Encrypt - Grenztest x")]
-        [TestCase("X", ExpectedResult = "A", TestName = "Encrypt - Grenztest X")]
+        [TestCase("sggf", ExpectedResult = "A", TestName = "Encrypt - Grenztest X")]
         [TestCase("9", ExpectedResult = "2", TestName = "Encrypt - Grenztest 9")]
         [TestCase("@#%&", ExpectedResult = "@#%&", TestName = "Encrypt - special characters")]
         [TestCase("     ", ExpectedResult = "     ", TestName = "Encrypt - space")]
