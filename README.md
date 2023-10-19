@@ -1,3 +1,3 @@
 # Schulung
-![pic]([[[https://github.com/Mcapozzolo/Schulung/tree/main/src/SortConsole.Test](https://github.com/Mcapozzolo/Schulung/actions/runs/6574449417)https://github.com/Mcapozzolo/Schulung/actions/runs/6574449417](https://github.com/Mcapozzolo/Schulung/actions/runs/6574449417/badge.svg)https://github.com/Mcapozzolo/Schulung/actions/runs/6574449417/badge.svg](https://img.shields.io/badge/Sortertests-passed-green?link=https%3A%2F%2Fgithub.com%2FMcapozzolo%2FSchulung%2Factions%2Fruns%2F6574449417)https://img.shields.io/badge/Sortertests-passed-green?link=https%3A%2F%2Fgithub.com%2FMcapozzolo%2FSchulung%2Factions%2Fruns%2F6574449417)
-Übungsseite für Programmieraufgaben.
+![pic](https://img.shields.io/badge/Sortertests-passed-green?link=https%3A%2F%2Fgithub.com%2FMcapozzolo%2FSchulung%2Factions%2Fruns%2F6574449417)
+
