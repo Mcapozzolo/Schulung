@@ -40,7 +40,7 @@ Ihre Eingabe: ");
                 {
                     Console.WriteLine("Geben sie ein Wort ein");
                     Ceasarverschluesselung c = new Ceasarverschluesselung();
-                    String r = Ceasarverschluesselung.Encrypt(Console.ReadLine() !);
+                    string r = Ceasarverschluesselung.Encrypt(Console.ReadLine()!);
                     Console.WriteLine(r);
                 }
                 else if (menuChoice.Equals("1"))
@@ -51,15 +51,26 @@ Ihre Eingabe: ");
 
                     if (inputNumbers.Length == 0)
                     {
-                        // output try again.
+                       Console.WriteLine("Bitte geben sie Ganze Zahlen ein!");
                     }
 
                     Sorter c = new Sorter();
                     int[] sortedNumbers = Sorter.Sort(inputNumbers);
 
                     string output = string.Join(", ", sortedNumbers);
-
-                    Console.WriteLine(output);
+                    if (!(output == "0,"))
+                    {
+                        Console.Write("{");
+                        Console.Write(output);
+                        Console.Write('}');
+                    }
+                }
+                else if (menuChoice.Equals("3"))
+                {
+                    Console.WriteLine("Geben sie ein Wort ein");
+                    Ceasarverschluesselung c = new Ceasarverschluesselung();
+                    string r = Ceasarverschluesselung.Decrypt(Console.ReadLine()!);
+                    Console.WriteLine(r);
                 }
             }
             while (menuChoice != "9");
